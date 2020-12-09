@@ -20,6 +20,16 @@ namespace Rolodex.Controllers
         {
             return this.View();
         }
+
+        public IActionResult Create()
+        {
+            return this.View();
+        }
+
+        public IActionResult Edit()
+        {
+            return this.View();
+        }
         
         public IActionResult Topics()
         {
