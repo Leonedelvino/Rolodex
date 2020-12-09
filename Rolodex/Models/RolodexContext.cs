@@ -10,5 +10,9 @@ namespace Rolodex.Models
     {
         public DbSet<RolodexModel> Rolodexes { get; set; }
         public DbSet<MnemonicImage> MnemonicImages { get; set; }
+
+        public RolodexContext(DbContextOptions<RolodexContext> options) : base(options)
+        {
+        }
     }
 }
