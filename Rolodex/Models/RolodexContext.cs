@@ -10,8 +10,5 @@ namespace Rolodex.Models
     {
         public DbSet<RolodexModel> Rolodexes { get; set; }
         public DbSet<MnemonicImage> MnemonicImages { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-           => options.UseSqlite("Data Source=Rolodex.Db");
     }
 }
